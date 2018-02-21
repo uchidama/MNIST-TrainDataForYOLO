@@ -42,12 +42,15 @@ wget https://pjreddie.com/media/files/darknet19_448.conv.23
 ./darknet detector train cfg/voc-mnist.data cfg/tiny-yolo-mnist.cfg darknet19_448.conv.23
 ```
 ## Predict MNIST test data
+
+[![https://gyazo.com/60106087c53d06beb05d9704956a8911](https://i.gyazo.com/60106087c53d06beb05d9704956a8911.png)](https://gyazo.com/60106087c53d06beb05d9704956a8911)
+
 ```sh
 ./darknet detector test <data file> <cfg file> <weights> <predict image>  
 ```
 ex. command.
 ```sh
-./darknet detector test cfg/voc-mnist.data cfg/tiny-yolo-mnist.cfg backup/tiny-yolo_500000.weights ~/github/mnist_to_jpeg/JPEGImages/60015.jpg
+./darknet detector test cfg/voc-mnist.data cfg/tiny-yolo-mnist.cfg backup/tiny-yolo_500000.weights ~/MNIST-TrainDataForYOLO/JPEGImages/60015.jpg
 ```
 
 ## Installation
