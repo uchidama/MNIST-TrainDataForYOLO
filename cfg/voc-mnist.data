@@ -1,0 +1,6 @@
+classes= 10
+train  = /tmp/darknet_mnist/train.txt
+valid  = /tmp/darknet_mnist/test.txt
+names = data/voc-mnist.names
+backup = backup
+
