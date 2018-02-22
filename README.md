@@ -43,7 +43,7 @@ wget https://pjreddie.com/media/files/darknet19_448.conv.23
 ```
 ## Predict MNIST test data
 
-[![https://gyazo.com/60106087c53d06beb05d9704956a8911](https://i.gyazo.com/60106087c53d06beb05d9704956a8911.png)](https://gyazo.com/60106087c53d06beb05d9704956a8911)
+[![https://gyazo.com/3649c293e3e718aa11af32e59d4897a4](https://i.gyazo.com/3649c293e3e718aa11af32e59d4897a4.png)](https://gyazo.com/3649c293e3e718aa11af32e59d4897a4)
 
 ```sh
 ./darknet detector test <data file> <cfg file> <weights> <predict image>  
