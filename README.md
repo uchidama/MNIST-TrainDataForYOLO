@@ -19,17 +19,17 @@ python generate_train_txt_and_test_txt.py
 
 ## Training YOLO on MNIST
 
-1. Modify train and test data path. Edit  cfg/voc-mnist.data
-```
-train  = <path-to-mnist-train>/train.txt
-valid  = <path-to-mnist-test>/test.txt
-```
-
-2. Copy files to darknet
+1. Copy files to darknet
 ```sh
 cp cfg/tiny-yolo-mnist.cfg <darknet_dir>/cfg
 cp cfg/voc-mnist.data <darknet_dir>/cfg
 cp data/voc-mnist.names <darknet_dir>/data
+```
+
+2. Modify train and test data path. Edit <darknet_dir>/cfg/voc-mnist.data
+```
+train  = <path-to-mnist-train>/train.txt
+valid  = <path-to-mnist-test>/test.txt
 ```
 
 3. Download Pretrained Convolutional Weights  
