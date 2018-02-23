@@ -54,6 +54,7 @@ valid  = <path-to-mnist-test>/test.txt
 
 5. Download Pretrained Convolutional Weights  
 ```sh
+cd <darknet_dir>
 wget https://pjreddie.com/media/files/darknet19_448.conv.23
 ```
 
