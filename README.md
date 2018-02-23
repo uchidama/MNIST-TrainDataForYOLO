@@ -17,7 +17,7 @@ python mnist_to_jpg_and_label.py
 python generate_train_txt_and_test_txt.py
 ```
 
-## Train YOLO
+## Training YOLO on MNIST
 
 1. Modify train and test data path. Edit  cfg/voc-mnist.data
 ```
