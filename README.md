@@ -24,8 +24,8 @@ make
 ```
 - [YOLO: Real-Time Object Detection](https://pjreddie.com/darknet/yolo/).
 
-## How to use
-
+# How to use
+## Generate MNIST Train Data
 1. generat MNIST images and labels.
 
 ```sh
