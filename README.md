@@ -57,8 +57,12 @@ valid  = <path-to-mnist-test>/test.txt
 cd <darknet_dir>
 wget https://pjreddie.com/media/files/darknet19_448.conv.23
 ```
+6. Make directory to save trained model.
+```sh
+mkdir backup
+```
 
-6. Train The Model
+7. Train The Model
 ```sh
 ./darknet detector train cfg/voc-mnist.data cfg/tiny-yolo-mnist.cfg darknet19_448.conv.23
 ```
