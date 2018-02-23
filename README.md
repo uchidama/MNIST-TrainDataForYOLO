@@ -4,6 +4,26 @@
 
 This software generats MNIST-Train Data For YOLO.  
 
+# Installation
+
+## Install Keras
+This software using Keras.
+- [Keras installation instructions](https://github.com/keras-team/keras#installation).
+
+If you want to run without to think keras and backend deeplearning frameworks, enter this command.   
+```sh
+pip install tensorflow
+pip install keras
+```
+
+## Install Darknet YOLO
+```sh
+git clone https://github.com/pjreddie/darknet
+cd darknet
+make
+```
+- [YOLO: Real-Time Object Detection](https://pjreddie.com/darknet/yolo/).
+
 ## How to use
 
 1. generat MNIST images and labels.
@@ -19,25 +39,25 @@ python generate_train_txt_and_test_txt.py
 
 ## Training YOLO on MNIST
 
-1. Copy files to darknet
+3. Copy files to darknet
 ```sh
 cp cfg/tiny-yolo-mnist.cfg <darknet_dir>/cfg
 cp cfg/voc-mnist.data <darknet_dir>/cfg
 cp data/voc-mnist.names <darknet_dir>/data
 ```
 
-2. Modify train and test data path. Edit <darknet_dir>/cfg/voc-mnist.data
+4. Modify train and test data path. Edit <darknet_dir>/cfg/voc-mnist.data
 ```
 train  = <path-to-mnist-train>/train.txt
 valid  = <path-to-mnist-test>/test.txt
 ```
 
-3. Download Pretrained Convolutional Weights  
+5. Download Pretrained Convolutional Weights  
 ```sh
 wget https://pjreddie.com/media/files/darknet19_448.conv.23
 ```
 
-4. Train The Model
+6. Train The Model
 ```sh
 ./darknet detector train cfg/voc-mnist.data cfg/tiny-yolo-mnist.cfg darknet19_448.conv.23
 ```
@@ -56,21 +76,10 @@ ex. command.
 
 [weights/tiny-yolo-mnist_500000.weights](https://github.com/uchidama/MNIST-TrainDataForYOLO/blob/master/weights/tiny-yolo-mnist_500000.weights)
 
-## Installation
-
-This software using Keras.
-- [Keras installation instructions](https://github.com/keras-team/keras#installation).
-
-If you want to run without to think keras and backend deeplearning frameworks, enter this command.   
-```sh
-pip install tensorflow
-pip install keras
-```
-
 ## License
 
 [MIT](LICENSE.md)
 
 ## Link
 
-[YOLO](https://pjreddie.com/darknet/yolo/)
+[YOLO: Real-Time Object Detection](https://pjreddie.com/darknet/yolo/)
